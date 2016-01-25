@@ -57,7 +57,7 @@ if [ "$TARGET_UNIFIED_DEVICE" == "" ] ; then
 fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
-# Omni properties
-echo "ro.omni.device=$OMNI_DEVICE"
+# Raindrop properties
+echo "ro.raindrop.device=$RAINDROP_DEVICE"
 
 echo "# end build properties"

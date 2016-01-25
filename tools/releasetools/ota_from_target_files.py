@@ -632,16 +632,12 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.Print("Formatting /data")
     script.FormatPartition("/data", OPTIONS.mount_by_label)
 
-  script.Print("#######################################");
-  script.Print("# _____            __  __  ______     #");
-  script.Print("#/\  __`\  /'\_/`\/\ \/\ \/\__  _\    #");
-  script.Print("#\ \ \/\ \/\  ``  \ \ ` \ \/_/\ \/    #");
-  script.Print("# \ \ \ \ \ \ \__\ \ \ . ` \ \ \ \    #");
-  script.Print("#  \ \ \_\ \ \ \_/\ \ \ \`\ \ \_\ \__ #");
-  script.Print("#   \ \_____\ \_\, \_\ \_\ \_\/\_____\#");
-  script.Print("#    \/_____/\/_/ \/_/\/_/\/_/\/_____/#");
-  script.Print("#                                     #");
-  script.Print("#######################################");
+  script.Print("#####################################");
+  script.Print("# ___   __  __ _  _ ___ ___  __ ___ #");
+  script.Print("#(  ,) (  )(  ( \( (   (  ,)/  (  ,\#");
+  script.Print("# )  \ /__\ )( )  ( ) ) )  ( () ) _/#");
+  script.Print("#(_)\_(_)(_(__(_)\_(___(_)\_\__(_)  #");
+  script.Print("#####################################");
 
   system_progress = 0.75
 
@@ -729,7 +725,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.WriteRawImage(bootpartition, "boot.img")
 
   script.ShowProgress(0.1, 0)
-  script.Print("Enjoy OMNI ROM!");
+  script.Print("Enjoy RAINDROP OS!");
   device_specific.FullOTA_InstallEnd()
 
   if OPTIONS.extra_script is not None:
